@@ -2,7 +2,7 @@
 section {
   padding-top: 100px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("images/space.jpg");
+    url("/images/space.jpg");
 }
 
 div img {

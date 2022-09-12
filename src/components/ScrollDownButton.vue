@@ -5,7 +5,7 @@ const props = defineProps(["to", "width"]);
 <template>
   <div>
     <a :href="to" :style="{ width: width }"
-      ><img src="images/down-arrow.png" alt="Down arrow"
+      ><img src="/images/down-arrow.png" alt="Down arrow"
     /></a>
   </div>
 </template>

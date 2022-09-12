@@ -41,14 +41,14 @@ import { RouterLink, RouterView } from "vue-router";
   <RouterView />
 
   <a id="top-button" href="#top"
-    ><img src="images/top.png" alt="Back to top"
+    ><img src="/images/top.png" alt="Back to top"
   /></a>
 
   <footer>
     <div id="footer">
       <div id="links" class="hover">
         <div style="">
-          <img src="images/logo.png" alt="logo" />
+          <img src="/images/logo.png" alt="logo" />
           <p>&copy; 2022 Copyright: Solar System</p>
         </div>
         <div>
