@@ -35,5 +35,5 @@ import("@google/model-viewer");
 </template>
 
 <style scoped>
-@import "../assets/styles/planetheader.css";
+@import "../styles/planetheader.css";
 </style>

@@ -56,5 +56,5 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/feedback.css";
+@import "../styles/feedback.css";
 </style>

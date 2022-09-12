@@ -44,13 +44,13 @@ import ArticleItem from "../components/ArticleItem.vue";
             <div class="flex-box">
               <CardItem
                 href="/sun"
-                src="/src/assets/images/sun.png"
+                src="/images/sun.png"
                 name="Sun"
                 desc="The Sun is the star at the center of the Solar System. It is a nearly perfect ball of hot plasma, heated to incandescence by nuclear fusion reactions in its core, radiating the energy mainly as light, ultraviolet, and infrared radiation. It is the most important source of energy for life on Earth."
               />
               <CardItem
                 href="/pluto"
-                src="/src/assets/images/pluto.png"
+                src="/images/pluto.png"
                 name="Pluto"
                 desc="Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It was the first object discovered in the Kuiper belt and remains the largest known body in that area. After Pluto was discovered in 1930, it was declared the ninth planet from the Sun."
               />
@@ -100,7 +100,7 @@ import ArticleItem from "../components/ArticleItem.vue";
   </section>
   <ArticleItem
     id="bot"
-    backgroundImage="linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/images/solar_system.jpg')"
+    backgroundImage="linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/solar_system.jpg')"
     title="Solar System"
     :article="article"
   />
@@ -116,25 +116,25 @@ export default {
         {
           name: "Mercury",
           href: "/Mercury",
-          src: "/src/assets/images/mercury.png",
+          src: "/images/mercury.png",
           desc: "Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes.",
         },
         {
           name: "Venus",
           href: "/Venus",
-          src: "/src/assets/images/venus.png",
+          src: "/images/venus.png",
           desc: "Venus is the second planet from the Sun and is named after the Roman goddess of love and beauty. As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight.",
         },
         {
           name: "Earth",
           href: "/Earth",
-          src: "/src/assets/images/earth.png",
+          src: "/images/earth.png",
           desc: "Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large volumes of water can be found throughout the Solar System, only Earth sustains liquid surface water.",
         },
         {
           name: "Mars",
           href: "/Mars",
-          src: "/src/assets/images/mars.png",
+          src: "/images/mars.png",
           desc: "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In the English language, Mars is named for the Roman god of war. Mars is a terrestrial planet with a thin atmosphere, and has a crust primarily composed of elements similar to Earth's crust, as well as a core made of iron and nickel.",
         },
       ],
@@ -142,25 +142,25 @@ export default {
         {
           name: "Jupiter",
           href: "/Jupiter",
-          src: "/src/assets/images/jupiter.png",
+          src: "/images/jupiter.png",
           desc: "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times. It was named after the Roman god Jupiter, the king of the gods.",
         },
         {
           name: "Saturn",
           href: "/Saturn",
-          src: "/src/assets/images/saturn.png",
+          src: "/images/saturn.png",
           desc: "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It has only one-eighth the average density of Earth; however, with its larger volume, Saturn is over 95 times more massive.",
         },
         {
           name: "Uranus",
           href: "/Uranus",
-          src: "/src/assets/images/uranus.png",
+          src: "/images/uranus.png",
           desc: "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus, who, according to Greek mythology, was the great-grandfather of Ares (Mars), grandfather of Zeus (Jupiter) and father of Cronus (Saturn).",
         },
         {
           name: "Neputne",
           href: "/Neptune",
-          src: "/src/assets/images/neptune.png",
+          src: "/images/neptune.png",
           desc: "Neptune is the eighth planet from the Sun and the farthest known solar planet. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus.",
         },
       ],
@@ -209,5 +209,5 @@ export default {
 </script>
 
 <style scoped>
-@import "../assets/styles/home.css";
+@import "../styles/home.css";
 </style>

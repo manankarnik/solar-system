@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from "vue-router";
   <nav>
     <div class="nav logo">
       <router-link to="/">
-        <img src="./assets/images/logo.png" alt="Logo" />
+        <img src="/images/logo.png" alt="Logo" />
       </router-link>
     </div>
     <div class="nav hover nav-left">
@@ -20,7 +20,7 @@ import { RouterLink, RouterView } from "vue-router";
       </ul>
     </div>
     <div @mouseover="toggleMenu = true" class="nav menu">
-      <img src="./assets/images/menu.png" alt="Menu" />
+      <img src="/images/menu.png" alt="Menu" />
     </div>
   </nav>
   <transition name="slide">
@@ -41,14 +41,14 @@ import { RouterLink, RouterView } from "vue-router";
   <RouterView />
 
   <a id="top-button" href="#top"
-    ><img src="/src/assets/images/top.png" alt="Back to top"
+    ><img src="images/top.png" alt="Back to top"
   /></a>
 
   <footer>
     <div id="footer">
       <div id="links" class="hover">
         <div style="">
-          <img src="/src/assets/images/logo.png" alt="logo" />
+          <img src="images/logo.png" alt="logo" />
           <p>&copy; 2022 Copyright: Solar System</p>
         </div>
         <div>
@@ -288,6 +288,6 @@ export default {
 </script>
 
 <style scoped>
-@import "./assets/styles/navbar.css";
-@import "./assets/styles/footer.css";
+@import "./styles/navbar.css";
+@import "./styles/footer.css";
 </style>

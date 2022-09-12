@@ -20,5 +20,5 @@ const props = defineProps(["id", "title", "backgroundImage", "article"]);
 </template>
 
 <style scoped>
-@import "../assets/styles/article.css";
+@import "../styles/article.css";
 </style>

@@ -4,14 +4,10 @@ import ArticleItem from "../components/ArticleItem.vue";
 </script>
 
 <template>
-  <PlanetHeader
-    model="/src/assets/models/sun.glb"
-    modelAlt="Sun"
-    :info="info"
-  />
+  <PlanetHeader model="/models/sun.glb" modelAlt="Sun" :info="info" />
   <ArticleItem
     id="mid"
-    backgroundImage="linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/images/sunbg.jpg')"
+    backgroundImage="linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/sunbg.jpg')"
     title="The Sun"
     :article="article"
   />

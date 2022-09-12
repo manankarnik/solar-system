@@ -2,7 +2,7 @@
 #top {
   display: block;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url("/src/assets/images/headerbg.jpg");
+      url("images/headerbg.jpg");
 }
 
 #top #container {

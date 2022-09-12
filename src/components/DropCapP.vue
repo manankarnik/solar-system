@@ -9,5 +9,5 @@ const props = defineProps(["text"]);
 </template>
 
 <style scoped>
-@import "../assets/styles/dropcap.css";
+@import "../styles/dropcap.css";
 </style>

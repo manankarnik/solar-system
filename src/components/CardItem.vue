@@ -17,5 +17,5 @@ const props = defineProps(["href", "src", "name", "desc"]);
 </template>
 
 <style scoped>
-@import "../assets/styles/card.css";
+@import "../styles/card.css";
 </style>
