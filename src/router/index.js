@@ -13,7 +13,7 @@ import Neptune from "../views/NeptuneView.vue";
 import Pluto from "../views/PlutoView.vue";
 
 const router = createRouter({
-  history: createWebHistory("/solar-system/"),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
