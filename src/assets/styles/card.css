@@ -1,0 +1,57 @@
+/* Scoped Stylesheet */
+.card {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 25%;
+  overflow: hidden hidden;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+  
+.card:hover {
+  background-color: rgba(73, 72, 72, 0.399);
+  transform: scale(1.1);
+  overflow: visible;
+  white-space: normal;
+  -webkit-box-orient: initial;
+}
+  
+.card img {
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  border-radius: 5px 5px 0 0;
+}
+  
+.text-box {
+  max-height: 10%;
+  min-height: 10%;
+  padding: 2px 16px;
+}
+  
+.text-box h4 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+
+.text-box p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  font-size: 16px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.card:hover .text-box p {
+  overflow: visible;
+  white-space: normal;
+  -webkit-box-orient: initial;
+}

@@ -1,0 +1,68 @@
+/* Scoped Stylesheet */
+footer {
+    width: 100%;
+    background-color: rgb(14, 14, 14);
+}
+
+#footer {
+    display: block;
+    padding: 20px;
+}
+
+#links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#links div {
+    margin: 10px;
+    width: 25%;
+}
+
+#footer hr {
+    border: 1px solid rgb(100, 100, 100);
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+
+#footer h3 {
+    font-family: "Open Sans";   
+    margin-left: 8px;
+    color: aliceblue;
+}
+
+#footer ul {
+    list-style: none;
+    margin-left: 8px;
+    columns: 2;
+}
+
+#footer li {
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+}
+
+#footer img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+#lib-credit {
+    color: rgb(150, 150, 150);
+    font-size: 18px;
+    font-family: "Consolas";
+    text-align: center;
+}
+
+#links p {
+    font-size: 20px;
+    padding-bottom: 40px;
+}
+
+#links div:first-child {
+    margin: auto; 
+    text-align: center;
+}

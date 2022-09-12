@@ -1,0 +1,102 @@
+<script setup>
+import PlanetHeader from "../components/PlanetHeader.vue";
+import ArticleItem from "../components/ArticleItem.vue";
+</script>
+
+<template>
+  <PlanetHeader
+    model="/src/assets/models/mercury.glb"
+    modelAlt="Mercury"
+    :info="info"
+  />
+  <ArticleItem
+    id="mid"
+    backgroundImage="linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/src/assets/images/mercurybg.jpg')"
+    title="Mercury"
+    :article="article"
+  />
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      info: {
+        left: [
+          {
+            heading: "Mean Distance",
+            text: "Aphelion:<br>69,816,900 km<br><br>Perihelion:<br>46,001,200 km",
+          },
+          {
+            heading: "Equatorial Radius",
+            text: "2,439.7±1.0 km",
+          },
+          {
+            heading: "Equatorial Circumference",
+            text: "15,329 km",
+          },
+          {
+            heading: "Mass",
+            text: "3.3011×10<sup>23</sup> kg",
+          },
+          {
+            heading: "Volume",
+            text: "6.083×10<sup>10</sup> km<sup>3</sup>",
+          },
+        ],
+        right: [
+          {
+            heading: "Average Density",
+            text: "5.427 g/cm<sup>3<sup>",
+          },
+          {
+            heading: "Surface Area",
+            text: "7.48×10<sup>7</sup> km<sup>2</sup>",
+          },
+          {
+            heading: "Escape Velocity",
+            text: "4.25 km/s",
+          },
+          {
+            heading: "Average Orbital Speed",
+            text: "47.36 km/s",
+          },
+          {
+            heading: "Age",
+            text: "4.503 billion years",
+          },
+        ],
+      },
+      article: [
+        {
+          heading: "Introduction",
+          text: [
+            `Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes (Ἑρμῆς). Like Venus, Mercury orbits the Sun within Earth's orbit as an inferior planet, and its apparent distance from the Sun as viewed from Earth never exceeds 28°. This proximity to the Sun means the planet can only be seen near the western horizon after sunset or the eastern horizon before sunrise, usually in twilight. At this time, it may appear as a bright star-like object, but is more difficult to observe than Venus. From Earth, the planet telescopically displays the complete range of phases, similar to Venus and the Moon, which recurs over its synodic period of approximately 116 days.`,
+            `Mercury rotates in a way that is unique in the Solar System. It is tidally locked with the Sun in a 3:2 spin–orbit resonance, meaning that relative to the fixed stars, it rotates on its axis exactly three times for every two revolutions it makes around the Sun.[a] As seen from the Sun, in a frame of reference that rotates with the orbital motion, it appears to rotate only once every two Mercurian years. An observer on Mercury would therefore see only one day every two Mercurian years.`,
+            `Mercury's axis has the smallest tilt of any of the Solar System's planets (about 1⁄30 degree). Its orbital eccentricity is the largest of all known planets in the Solar System;[b] at perihelion, Mercury's distance from the Sun is only about two-thirds (or 66%) of its distance at aphelion. Mercury's surface appears heavily cratered and is similar in appearance to the Moon's, indicating that it has been geologically inactive for billions of years. Having almost no atmosphere to retain heat, it has surface temperatures that vary diurnally more than on any other planet in the Solar System, ranging from 100 K (−173 °C; −280 °F) at night to 700 K (427 °C; 800 °F) during the day across the equatorial regions. The polar regions are constantly below 180 K (−93 °C; −136 °F). The planet has no known natural satellites.`,
+            `Two spacecraft have visited Mercury: Mariner 10 flew by in 1974 and 1975; and MESSENGER, launched in 2004, orbited Mercury over 4,000 times in four years before exhausting its fuel and crashing into the planet's surface on April 30, 2015. The BepiColombo spacecraft is planned to arrive at Mercury in 2025.`,
+          ],
+        },
+        {
+          heading: "Internal Structure",
+          text: [
+            `Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density is the second highest in the Solar System at 5.427 g/cm3, only slightly less than Earth's density of 5.515 g/cm3. If the effect of gravitational compression were to be factored out from both planets, the materials of which Mercury is made would be denser than those of Earth, with an uncompressed density of 5.3 g/cm3 versus Earth's 4.4 g/cm3. Mercury's density can be used to infer details of its inner structure. Although Earth's high density results appreciably from gravitational compression, particularly at the core, Mercury is much smaller and its inner regions are not as compressed. Therefore, for it to have such a high density, its core must be large and rich in iron.`,
+            `The radius of Mercury's core is estimated to be 2,020 ± 30 km (1,255 ± 19 mi), based on interior models constrained to be consistent with the value of the moment of inertia factor given in the infobox. Hence, Mercury's core occupies about 57% of its volume; for Earth this proportion is 17%. Research published in 2007 suggests that Mercury has a molten core. Surrounding the core is a 500–700 km (310–430 mi) mantle consisting of silicates. Based on data from the Mariner 10 mission and Earth-based observation, Mercury's crust is estimated to be 35 km (22 mi) thick. However, this model may be an overestimate and the crust could be 26 ± 11 km (16.2 ± 6.8 mi) thick based on an Airy isostacy model. One distinctive feature of Mercury's surface is the presence of numerous narrow ridges, extending up to several hundred kilometers in length. It is thought that these were formed as Mercury's core and mantle cooled and contracted at a time when the crust had already solidified.`,
+            `Mercury's core has a higher iron content than that of any other major planet in the Solar System, and several theories have been proposed to explain this. The most widely accepted theory is that Mercury originally had a metal–silicate ratio similar to common chondrite meteorites, thought to be typical of the Solar System's rocky matter, and a mass approximately 2.25 times its current mass. Early in the Solar System's history, Mercury may have been struck by a planetesimal of approximately 1/6 Mercury's mass and several thousand kilometers across. The impact would have stripped away much of the original crust and mantle, leaving the core behind as a relatively major component. A similar process, known as the giant impact hypothesis, has been proposed to explain the formation of the Moon.`,
+            `Alternatively, Mercury may have formed from the solar nebula before the Sun's energy output had stabilized. It would initially have had twice its present mass, but as the protosun contracted, temperatures near Mercury could have been between 2,500 and 3,500 K and possibly even as high as 10,000 K. Much of Mercury's surface rock could have been vaporized at such temperatures, forming an atmosphere of "rock vapor" that could have been carried away by the solar wind.`,
+            `A third hypothesis proposes that the solar nebula caused drag on the particles from which Mercury was accreting, which meant that lighter particles were lost from the accreting material and not gathered by Mercury. Each hypothesis predicts a different surface composition, and there are two space missions set to make observations. MESSENGER, which ended in 2015, found higher-than-expected potassium and sulfur levels on the surface, suggesting that the giant impact hypothesis and vaporization of the crust and mantle did not occur because potassium and sulfur would have been driven off by the extreme heat of these events. BepiColombo, which will arrive at Mercury in 2025, will make observations to test these hypotheses. The findings so far would seem to favor the third hypothesis; however, further analysis of the data is needed.`,
+          ],
+        },
+        {
+          heading: "Surface Geology",
+          text: [
+            `Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like plains and heavy cratering, indicating that it has been geologically inactive for billions of years. It is more heterogeneous than the surface of Mars or the Moon, both of which contain significant stretches of similar geology, such as maria and plateaus. Albedo features are areas of markedly different reflectivity, which include impact craters, the resulting ejecta, and ray systems. Larger albedo features correspond to higher reflectivity plains. Mercury has dorsa (also called "wrinkle-ridges"), Moon-like highlands, montes (mountains), planitiae (plains), rupes (escarpments), and valles (valleys).`,
+            `The planet's mantle is chemically heterogeneous, suggesting the planet went through a magma ocean phase early in its history. Crystallization of minerals and convective overturn resulted in layered, chemically heterogeneous crust with large-scale variations in chemical composition observed on the surface. The crust is low in iron but high in sulfur, resulting from the stronger early chemically reducing conditions than is found in the other terrestrial planets. The surface is dominated by iron-poor pyroxene and olivine, as represented by enstatite and forsterite, respectively, along with sodium-rich plagioclase and minerals of mixed magnesium, calcium, and iron-sulfide. The less reflective regions of the crust are high in carbon, most likely in the form of graphite.`,
+            `Names for features on Mercury come from a variety of sources. Names coming from people are limited to the deceased. Craters are named for artists, musicians, painters, and authors who have made outstanding or fundamental contributions to their field. Ridges, or dorsa, are named for scientists who have contributed to the study of Mercury. Depressions or fossae are named for works of architecture. Montes are named for the word "hot" in a variety of languages. Plains or planitiae are named for Mercury in various languages. Escarpments or rupēs are named for ships of scientific expeditions. Valleys or valles are named for abandoned cities, towns, or settlements of antiquity.`,
+          ],
+        },
+      ],
+    };
+  },
+};
+</script>

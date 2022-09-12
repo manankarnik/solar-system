@@ -1,0 +1,125 @@
+/* Scoped Stylesheet */
+#top {
+  display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("/src/assets/images/headerbg.jpg");
+}
+
+#top #container {
+  position: absolute;
+  transform: translate(-50%, 0);
+  bottom: 10%;
+  left: 50%;
+  width: 60%;
+}
+
+#mid {
+  background-color: rgb(14, 14, 14);
+  width: 100%;
+}
+
+#main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+
+}
+
+#main-container .side-buttons {
+  display: flex;
+  align-items: center;
+  background-color: rgba(32, 32, 32, 0.4);
+  font-size: 30px;
+  height: 60%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 8%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  transition: 0.3s;
+}
+
+#main-container .side-buttons:hover {
+  background-color: rgba(72, 72, 72, 0.4);
+  transform: scale(1.1);
+}
+
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 80px;
+}
+
+.text-box p {
+  font-size: 18px;
+}
+
+.card-container div.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 55%;
+  display: block;
+}
+
+.card-container div.slide h2 {
+  margin-top: 8%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 50px;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card-container div.flex-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: all 1s;
+}
+
+.slide-right-enter-from {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.slide-right-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: all 1s;
+}
+.slide-left-enter-from {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide-left-leave-to {
+  transform: translateX(-100%);
+  opacity: 0;
+}
