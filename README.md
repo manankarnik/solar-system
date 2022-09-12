@@ -1,4 +1,5 @@
 # solar-system
+```Note: While running dev server, remove '/solar-system/' from public asset paths```
 
 This template should help get you started developing with Vue 3 in Vite.
 
